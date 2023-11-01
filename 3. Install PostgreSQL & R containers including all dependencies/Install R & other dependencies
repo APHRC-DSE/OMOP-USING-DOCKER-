@@ -4,7 +4,7 @@ sudo apt install default jre / jdk
 #INSTALLING R PACKAGES & DEPENDENCIES
 install.packages ("Achilles")
 
-Install linux dependencies 
+#Install linux dependencies 
 sudo apt install libcurl4-openssl-dev
 				sudo apt install libxml2-dev
 
