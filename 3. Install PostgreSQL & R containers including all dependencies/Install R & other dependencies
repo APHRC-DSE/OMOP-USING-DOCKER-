@@ -16,9 +16,9 @@ downloadJdbcDrivers("postgresql")
 
 connectionDetails <- createConnectionDetails(
   dbms = "postgresql",
-  server = "172.18.0.3/postgres",
+  server = "172.18.0.3/postgres", --atlas DB ip address
   user = "postgres",
-  password = "mypass",
+  password = "yourpassword",
   pathToDriver = "c:/temp/jdbcDrivers" 
 )
 --demo cdm achilles
@@ -30,7 +30,7 @@ outputFolder <- "Output"
                    sourceName = "cdm",
                    createTable = TRUE,
                    smallCellCount = 5,
-                   cdmVersion = "5.3.1",
+                   cdmVersion = "5.3.1", ---ypur CDM version
                    numThreads = 1,
                    outputFolder = outputFolder)
 
