@@ -1,0 +1,36 @@
+#Install Java on linux 
+sudo apt install default jre / jdk
+
+#INSTALLING R PACKAGES & DEPENDENCIES
+install.packages ("Achilles")
+
+Install linux dependencies 
+sudo apt install libcurl4-openssl-dev
+				sudo apt install libxml2-dev
+
+#open R and install packages to run achilles
+Install.packages ("databaseconnector")
+library(Achilles)
+Sys.setenv("DATABASECONNECTOR_JAR_FOLDER" = "c:/temp/jdbcDrivers")
+downloadJdbcDrivers("postgresql")
+
+connectionDetails <- createConnectionDetails(
+  dbms = "postgresql",
+  server = "172.18.0.3/postgres",
+  user = "postgres",
+  password = "mypass",
+  pathToDriver = "c:/temp/jdbcDrivers" 
+)
+--demo cdm achilles
+outputFolder <- "Output"
+
+ Achilles::achilles(connectionDetails = connectionDetails,
+                   cdmDatabaseSchema = "demo_cdm",
+                   resultsDatabaseSchema = "demo_cdm_results",
+                   sourceName = "cdm",
+                   createTable = TRUE,
+                   smallCellCount = 5,
+                   cdmVersion = "5.3.1",
+                   numThreads = 1,
+                   outputFolder = outputFolder)
+
