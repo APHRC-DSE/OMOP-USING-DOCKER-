@@ -1,0 +1,9 @@
+Broadsea runs the core OHDSI technology stack using cross-platform Docker container technology.
+Git clone github repo 
+git clone https://github.com/OHDSI/Broadsea.git
+
+Start the broadsea containers 
+docker compose pull && docker-compose --profile default up -d
+
+In the web browser, open the URL "http://127.0.0.1" 
+OHDSI containers; ATLAS, HADES & ARES should open
