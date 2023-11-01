@@ -11,5 +11,5 @@ STEPS FOLLOWED
    The Broadsea containers include OHDSI R HADES, OHDSI ATLAS, & OHDSI ARES
 3. Pull all default OHDSI containers
 4. Open & run ATLAS IP address.
-5. Install PostGreSLQ client, R and all dependencies
+5. Install PostgreSLQ client, R and all dependencies
 6. Restore the local PostgreSQL to the PSQL container, connect to the webapi and run ATLAS.  
