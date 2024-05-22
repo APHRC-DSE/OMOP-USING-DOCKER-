@@ -1,7 +1,7 @@
 # OMOP-USING-DOCKER
 
 This repository contains code and information on using docker images to visualize OMOP tables using ATLAS. 
-The data used is from MAGU HDSS and is part of the ALPHA Network HIV incidence and mortality specs found here https://alpha.lshtm.ac.uk/
+
 
 Docker was run from a linux terminal.
 
