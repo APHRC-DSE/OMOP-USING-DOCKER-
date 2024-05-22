@@ -30,7 +30,7 @@ outputFolder <- "Output"
                    sourceName = "cdm",
                    createTable = TRUE,
                    smallCellCount = 5,
-                   cdmVersion = "5.3.1", ---ypur CDM version
+                   cdmVersion = "5.3.1", ---your CDM version
                    numThreads = 1,
                    outputFolder = outputFolder)
 
