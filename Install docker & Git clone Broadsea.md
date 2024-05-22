@@ -1,6 +1,7 @@
 # Docker
 ## Install docker engine using this manual:
-[Docker Installing](https://docs.docker.com/engine/install/ubuntu/)
+To get started with Docker Engine on Ubuntu, make sure you meet the prerequisites, and then follow the installation steps.
+[Install Docker Engine on Ubuntu](https://docs.docker.com/engine/install/ubuntu/)
 
 # Broadsea
 Broadsea runs the core OHDSI technology stack using cross-platform Docker container technology.
